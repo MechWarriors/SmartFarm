@@ -41,22 +41,23 @@ void loop()
     case '0':
       digitalWrite(12, HIGH);
       lcd.print("Riego ON");
-
       break;
+
     case '1':
       digitalWrite(13, HIGH);
       lcd.print("Ventilacion ON");
-   
       break;
+   
     case '2':
       digitalWrite(12, LOW);
-      lcd.print("Riego OFF");
-
+      lcd.print("Riego OFF");
       break;
+
     case '3':
       digitalWrite(13, LOW);
       lcd.print("Ventilacion OFF");
       break;
+   
     default:
       break;
     }
